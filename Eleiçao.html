@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sa faculdade</title>
+</head>
+<body>
+    <script>
+        var x=0, y=0
+        var qntdjose=0, qntdjoão=0
+        while(y>=0){
+        y=prompt("Digite o titulo do eleitor");
+        x=parseInt(prompt("Para votar digite \n 1-João do partido esperança \n 2-José partido felicicdade"));
+        
+        switch(x){
+          case 1: 
+            qntdjoão++
+            break
+          case 2:
+            qntdjose++
+            break 
+        }
+        if(qntdjoão>qntdjose){
+            alert("Candidato João do Partido Esperança está ganhando com: " +qntdjoão)
+        }
+        if(qntdjose>qntdjoão){
+            alert("Candidato José do Partido Felicidade está ganahdno com: " +qntdjose)
+        }
+        if(qntdjose==qntdjoão){
+            alert("Empate")
+        }
+        }
+    </script>
+</body>
+</html>
